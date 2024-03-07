@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         checkBoxItsMe = findViewById(R.id.checkBox);
         val oclBtnWhoAmI = View.OnClickListener {
             checkBoxItsMe.isChecked = true;
-            textViewStudent.text = "Мой номер по списку № 11";
+            textViewStudent.text = "Мой номер по списку № 10";
         }
         btnWhoAmI.setOnClickListener(oclBtnWhoAmI);
     }
