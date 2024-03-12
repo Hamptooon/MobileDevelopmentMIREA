@@ -1,0 +1,67 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:text="Why is Kotlin your next Programming Language?"
+                android:textColor="#7A23A8"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginBottom="20dp"
+                android:background="#1B1B1B"
+                android:src="@drawable/img_kotlinmain" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="#B360D3"
+                android:letterSpacing="0.06"
+                android:text="Kotlin brings a fresh perspective as it is a new programming language from JetBrains. We know that JetBrains has been behind several IDEs and with the progress that they have made, Kotlin and many other similar programming languages are here to stay for years."
+                android:textColor="#0E0E0E"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.06"
+                android:text="Considering Kotlin is not so new in the business but ever since the android technology is evolving at an unprecedented speed. This makes Kotlin replace Java as the official language of Google. Assuming that this is what Kotlin can offer then it is not true. To change this myth, we will explore Kotlin a bit; its existence, adoption, advantages, limitations, and many more. Then, We will also go through some of the issues and hiccups you can run into if you start utilizing it right away. Finally, let’s argue whether Kotlin is the futuristic programming language or not."
+                android:textColor="#292929"
+                android:textSize="18sp"
+
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
