@@ -9,9 +9,9 @@ class MyProgressDialogFragment : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val progressDialog = ProgressDialog(activity)
-        progressDialog.setMessage("Подождите...") // Установите текст сообщения
-        progressDialog.isIndeterminate = true // Установите, чтобы индикатор был неопределенным (бесконечным)
-        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER) // Установите стиль индикатора (кружок)
+        progressDialog.setMessage("Подождите...")
+        progressDialog.isIndeterminate = true
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER)
 
         return progressDialog
     }
