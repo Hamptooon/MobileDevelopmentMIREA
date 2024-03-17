@@ -32,4 +32,9 @@
         android:name="ru.mirea.karacheviv.mireaproject.WebView"
         android:label="@string/menu_browser"
         tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/nav_image_worker"
+        android:name="ru.mirea.karacheviv.mireaproject.ImageSendFragment"
+        android:label="fragment_image_send"
+        tools:layout="@layout/fragment_image_send" />
 </navigation>

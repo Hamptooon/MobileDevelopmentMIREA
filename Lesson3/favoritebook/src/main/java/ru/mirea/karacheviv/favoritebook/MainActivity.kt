@@ -37,10 +37,7 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
-//    override fun onStart() {
-//        super.onStart()
-//
-//    }
+
 
     fun getInfoAboutBook(view: View){
         val intent = Intent(this, ShareActivity::class.java)
