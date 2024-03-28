@@ -35,6 +35,21 @@
     <fragment
         android:id="@+id/nav_image_worker"
         android:name="ru.mirea.karacheviv.mireaproject.ImageSendFragment"
-        android:label="fragment_image_send"
+        android:label="@string/menu_image_worker"
         tools:layout="@layout/fragment_image_send" />
+    <fragment
+        android:id="@+id/nav_compass"
+        android:name="ru.mirea.karacheviv.mireaproject.CompassFragment"
+        android:label="@string/menu_compass"
+        tools:layout="@layout/fragment_compass" />
+    <fragment
+        android:id="@+id/nav_record"
+        android:name="ru.mirea.karacheviv.mireaproject.RecordFragment"
+        android:label="@string/menu_recording"
+        tools:layout="@layout/fragment_record" />
+    <fragment
+        android:id="@+id/nav_image_collage"
+        android:name="ru.mirea.karacheviv.mireaproject.ImageCollageFragment"
+        android:label="@string/menu_collage"
+        tools:layout="@layout/fragment_image_collage" />
 </navigation>

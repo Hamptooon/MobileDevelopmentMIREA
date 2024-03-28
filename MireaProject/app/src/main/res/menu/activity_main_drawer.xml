@@ -16,5 +16,19 @@
             android:id="@+id/nav_image_worker"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_image_worker" />
+        <item
+            android:id="@+id/nav_compass"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_compass" />
+
+        <item
+            android:id="@+id/nav_record"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_recording" />
+
+        <item
+            android:id="@+id/nav_image_collage"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_collage" />
     </group>
 </menu>

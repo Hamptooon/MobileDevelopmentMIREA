@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import ru.mirea.karacheviv.thread.databinding.ActivityMainBinding
-import java.text.Format
 import java.util.Arrays
+import java.util.Locale
 
 
 class MainActivity : AppCompatActivity() {
@@ -45,6 +45,26 @@ class MainActivity : AppCompatActivity() {
                 Log.d("ThreadProject", "Выполнен поток №	" + numberThread)
 
             }.start()
+
+            Thread(Runnable {
+                val days: Float
+                var lessons = 0f
+                try {
+                    days = binding.daysText.text.toString().toFloat()
+                    lessons = binding.lessonDays.text.toString().toFloat()
+                    if (days == 0f) {
+                        return@Runnable
+                    }
+                } catch (e: NumberFormatException) {
+                    return@Runnable
+                }
+                val finalLessons = lessons
+                runOnUiThread {
+                    val result = finalLessons / days
+                    val newText = String.format(Locale.getDefault(), "%.2f", result)
+                    binding.resultAverage.setText(newText)
+                }
+            }).start()
 
         }
     }
