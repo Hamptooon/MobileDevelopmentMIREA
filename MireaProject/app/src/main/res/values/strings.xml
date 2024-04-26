@@ -16,6 +16,10 @@
     <string name="menu_compass">Compass</string>
     <string name="menu_recording">Recording</string>
     <string name="menu_collage">Collage</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_files_work">FilesWork</string>
+    <string name="menu_http">Http</string>
+    <string name="menu_map">Map</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

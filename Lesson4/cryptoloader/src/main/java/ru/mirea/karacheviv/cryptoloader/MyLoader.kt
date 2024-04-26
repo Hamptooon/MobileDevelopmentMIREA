@@ -2,6 +2,7 @@ package ru.mirea.karacheviv.cryptoloader
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import androidx.loader.content.AsyncTaskLoader
 import java.security.InvalidKeyException
 import java.security.NoSuchAlgorithmException
@@ -19,11 +20,7 @@ class MyLoader(context: Context, private val args : Bundle) : AsyncTaskLoader<St
         const val ARG_WORD = "word"
     }
 
-//    init {
-//        if(args != null){
-//            firstName = args.getString(ARG_WORD);
-//        }
-//    }
+
 
     override fun onStartLoading() {
         super.onStartLoading()
@@ -35,6 +32,7 @@ class MyLoader(context: Context, private val args : Bundle) : AsyncTaskLoader<St
 //        SystemClock.sleep(5000)
         val cryptText: ByteArray = args.getByteArray(ARG_WORD)!!
         val key: ByteArray = args.getByteArray("key")!!
+
         val originalKey: SecretKey = SecretKeySpec(key, 0, key.size, "AES")
         return decryptText(cryptText, originalKey)
     }

@@ -20,6 +20,7 @@ import javax.crypto.KeyGenerator
 import javax.crypto.NoSuchPaddingException
 import javax.crypto.SecretKey
 import javax.crypto.spec.SecretKeySpec
+import kotlin.random.Random
 
 
 class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<String> {
@@ -58,7 +59,7 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<String> 
     private fun generateKey(): SecretKey? {
         return try {
             val sr = SecureRandom.getInstance("SHA1PRNG")
-            sr.setSeed("any	data	used	as	random	seed".toByteArray())
+            sr.setSeed(Random(70).toString().toByteArray())
             val kg = KeyGenerator.getInstance("AES")
             kg.init(256, sr)
             SecretKeySpec(kg.generateKey().encoded, "AES")
@@ -87,6 +88,7 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<String> 
     fun onClickEncryptBtn(view: View){
         val textToEncrypt = binding.editText1.text.toString()
         val key = generateKey()
+
         val cryptText = encryptMsg(textToEncrypt, key)
         val bundle = Bundle()
         bundle.putByteArray(MyLoader.ARG_WORD, cryptText)

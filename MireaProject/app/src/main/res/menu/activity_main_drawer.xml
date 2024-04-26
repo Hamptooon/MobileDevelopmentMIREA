@@ -30,5 +30,22 @@
             android:id="@+id/nav_image_collage"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_collage" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_files_work"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_files_work" />
+        <item
+            android:id="@+id/nav_http"
+            android:icon="@drawable/ic_browser"
+            android:title="@string/menu_http" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_browser"
+            android:title="@string/menu_map" />
     </group>
 </menu>

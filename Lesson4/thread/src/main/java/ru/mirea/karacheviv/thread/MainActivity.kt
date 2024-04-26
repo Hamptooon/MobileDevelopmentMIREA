@@ -46,25 +46,25 @@ class MainActivity : AppCompatActivity() {
 
             }.start()
 
-            Thread(Runnable {
+            Thread{
                 val days: Float
                 var lessons = 0f
                 try {
                     days = binding.daysText.text.toString().toFloat()
                     lessons = binding.lessonDays.text.toString().toFloat()
                     if (days == 0f) {
-                        return@Runnable
+                        return@Thread
                     }
                 } catch (e: NumberFormatException) {
-                    return@Runnable
+                    throw RuntimeException(e)
                 }
                 val finalLessons = lessons
+                val result = finalLessons / days
+                val newText = String.format(Locale.getDefault(), "%.2f", result)
                 runOnUiThread {
-                    val result = finalLessons / days
-                    val newText = String.format(Locale.getDefault(), "%.2f", result)
                     binding.resultAverage.setText(newText)
                 }
-            }).start()
+            }.start()
 
         }
     }

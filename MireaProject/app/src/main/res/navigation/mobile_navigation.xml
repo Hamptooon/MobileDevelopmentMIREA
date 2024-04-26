@@ -52,4 +52,24 @@
         android:name="ru.mirea.karacheviv.mireaproject.ImageCollageFragment"
         android:label="@string/menu_collage"
         tools:layout="@layout/fragment_image_collage" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.mirea.karacheviv.mireaproject.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_files_work"
+        android:name="ru.mirea.karacheviv.mireaproject.FilesWorkFragment"
+        android:label="@string/menu_files_work"
+        tools:layout="@layout/fragment_files_work" />
+    <fragment
+        android:id="@+id/nav_http"
+        android:name="ru.mirea.karacheviv.mireaproject.HttpFragment"
+        android:label="@string/menu_http"
+        tools:layout="@layout/fragment_http" />
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="ru.mirea.karacheviv.mireaproject.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
 </navigation>
